@@ -1,2 +1,89 @@
 /* Main CSS StyleSheet */
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    height: 100vh;
+    width: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    color: #f9faf8;
+    background-color: #1f2937;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+#header {flex:auto}
+
+.logo {height: 115px; width: 115px; border: 2px solid white; border-radius: 50%; margin-right: 25px;}
+
+#name>:first-child {font-size: 36px; font-weight: bold;}
+#name>:last-child {font-size: 18px; font-weight: 500;font-style: italic;}
+
+#social-list {
+    margin-left: 25px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+a {text-decoration: none; color: #e5e7eb; font-size: 18px;}
+
+/* QUOTE */
+
+#quote {
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: column;
+    padding: 100px 130px 70px 130px;
+}
+
+#quote > p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    text-align: justify;
+}
+
+#quote > h4 {
+    font-size: 24px;
+    color: #1f2937;
+    font-weight: bolder;
+    text-align: end;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#footer > span {color: darkgrey; font-weight: 200;}
